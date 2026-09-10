@@ -29,4 +29,5 @@ remote (remove/add/-v) remoteName link
 branch (_/-M)
 touch .gitignore
 config --global (property) (value)
-
+reset --hard id => remove history of commits
+clean 
