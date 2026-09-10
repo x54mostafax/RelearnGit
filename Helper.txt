@@ -1,0 +1,32 @@
+####Basic Commands:
+pwd
+du
+uniq
+find for files
+grip fot txt
+sort
+wc 
+rm
+ls
+rmdir
+df
+
+####Super user :
+sudo 
+chmod for RWX
+
+###SSH :
+ssh-keygen -t (type) -b (size) -C "email"
+ssh -T git@github.com
+
+####Git :git (+)
+init
+status
+resore --hard *(remove edits)*
+pull (romotelink) (branchName)
+push -u (romotelink) (branchName)
+remote (remove/add/-v) remoteName link
+branch (_/-M)
+touch .gitignore
+config --global (property) (value)
+
