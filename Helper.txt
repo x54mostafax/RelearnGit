@@ -14,6 +14,11 @@ df
 ####Super user :
 sudo 
 chmod for RWX
+chown user:group
+#Numeric values:
+R 4
+W 2
+X 1
 
 ###SSH :
 ssh-keygen -t (type) -b (size) -C "email"
@@ -31,3 +36,56 @@ touch .gitignore
 config --global (property) (value)
 reset --hard id => remove history of commits
 clean 
+
+
+
+####bash shell:
+#!/bin/bash -> for use compiler
+variable="value" 
+$variable
+sum =$(n1+n2)
+echo "Iam $variable" -> Iam value 
+echo 'Iam $variable' -> Iam $variable
+ls D 2> error.log
+ls D 1> output.log
+###Functions
+FunctionName{
+   code
+local variable="value"
+} 
+FuncionName    # Call func
+##
+${n} -> get the argument that its index is n
+$$  -> get number of argument
+read -p "Enter ur age : " age
+read -p "Enter ur first & last name : " firstname lastname
+ls D &> output_and_error.log
+ls D | grep ".sh" | sort -> translate arguments from command to command
+###IF Conditions:
+if [condition];
+then
+  code
+else if [cond] ;
+then 
+  code
+else 
+   code
+fi
+##
+chmod +x F.sh
+-d D -> is D exists? (T/F)
+-f F -> is F exists? (T/F)
+
+
+###Looping:
+(While|untill [condition])
+do
+ code
+ ((counter++))
+done
+
+for (( i=1; i<=5; i++ )) or i in array (A B C | {1..5})
+do
+   code    
+done
+
